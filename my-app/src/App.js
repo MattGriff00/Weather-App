@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 import Weather from './components/weather';
 import { Dimmer, Loader } from 'semantic-ui-react';
+import Home from './components/Home'
 
 export default function App() {
   const [lat, setLat] = useState([]);
@@ -36,7 +37,7 @@ export default function App() {
           </Dimmer>
         </div>
       )}
-
+      <Home />
     </div>
   );
 }
